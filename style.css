@@ -53,14 +53,15 @@ h1{
     width: 40%;
     padding-left: auto;
     padding-right: auto;
-    background-color: #996BF966;
+    /*background-color: #996BF966;*/
+    background:linear-gradient(90deg, #996BF9FF 0%, #996BF9FF 75%, #996BF911 75%);
     border: 2px solid;
     border-color:#8C8C8C;
     border-radius: 10px;
 }
 
 .btnSub{
-    background-color: #FFFFFF;
+    background:#FFFFFF;
 
 }
 
