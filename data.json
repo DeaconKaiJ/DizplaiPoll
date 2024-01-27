@@ -1,0 +1,32 @@
+{
+    "pollId": 1,
+    "pollName": "Premier League Winner",
+    "question": "Who will win the Premier League?",
+    "options": [
+    
+        {   
+            "optionId": 1,
+    
+            "optionText": "Manchester City",
+
+            "votes": 0
+        },
+    
+        {
+            "optionId": 2,
+    
+            "optionText": "Arsenal",
+
+            "votes": 0
+        },
+    
+        {
+            "optionId": 3,
+    
+            "optionText": "Liverpool",
+
+            "votes": 0
+        }
+
+    ]
+}

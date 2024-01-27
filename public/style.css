@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: outfitSemiBold;
+    src: url('assets/assets/Outfit/static/Outfit-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: outfitRegular;
+    src: url('assets/assets/Outfit/static/Outfit-Regular.ttf');
+}
+
+.column {
+    width: auto;
+    padding: 5%;
+}
+
+.row{
+    text-align: center;
+    padding: 1%;
+}
+
+
+.backgroundIMG{
+    display: block;
+    background-image:url('assets/assets/background.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    width:fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1{
+    font-size: 60px;
+    font-family: outfitSemiBold;
+    color: #FFFFFF;
+}
+
+.button{
+    height: fit-content;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border: 2px solid;
+    border-color:#8C8C8C;
+    border-radius: 10px;
+}
+
+button{
+    height: fit-content;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border: 2px solid;
+    border-color:#8C8C8C;
+    border-radius: 10px;
+}
+
+p1{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: outfitRegular;
+    font-size: 40px;
+}
+
+p2{
+    text-align: right;
+    align-items: right;
+    color: #FFFFFF;
+    font-family: outfitRegular;
+    font-size: 40px;
+    width: fit-content;
+}
+
+.btnSub{
+    background:#FFFFFF;
+
+}
+
+input[class="button"] {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: outfitRegular;
+    font-size: 40px;
+}
+
+span{
+    text-align: center;
+    color: #996BF9;
+    font-family: outfitRegular;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    h1{
+        font-size: 20px;
+    }
+    input[class="button"] {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: OutfitBold;
+        font-size: 20px;
+    }
+    span {
+        font-size: 20px;
+      }
+  }
+
+  @media only screen and (max-height: 800px) {
+
+    h1{
+        font-size: 20px;
+    }
+    input[class="button"] {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: OutfitBold;
+        font-size: 20px;
+    }
+    span {
+        font-size: 20px;
+      }
+  }
