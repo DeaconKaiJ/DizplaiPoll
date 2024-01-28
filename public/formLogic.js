@@ -3,6 +3,10 @@ var option2 = document.getElementById("option2")
 var option3 = document.getElementById("option3")
 var submit = document.getElementById("submit")
 
+var form = document.getElementById("formID")
+
+form.action= window.location.pathname
+
 const array = [option1, option2, option3]
 
 option1.addEventListener("click", function(){

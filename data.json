@@ -1,32 +1,38 @@
 {
-    "pollId": 1,
-    "pollName": "Premier League Winner",
-    "question": "Who will win the Premier League?",
-    "options": [
-    
-        {   
-            "optionId": 1,
-    
-            "optionText": "Manchester City",
-
-            "votes": 0
-        },
-    
+    "polls":[
         {
-            "optionId": 2,
+        "pollId": 1,
+        "pollName": "Premier League Winner",
+        "question": "Who will win the Premier League?",
+        "options": [
+        
+            {   
+                "optionId": 1,
+        
+                "optionText": "Manchester United",
     
-            "optionText": "Arsenal",
-
-            "votes": 0
-        },
+                "votes": 549
+            },
+        
+            {
+                "optionId": 2,
+        
+                "optionText": "Arsenal",
     
-        {
-            "optionId": 3,
+                "votes": 180
+            },
+        
+            {
+                "optionId": 3,
+        
+                "optionText": "Liverpool",
     
-            "optionText": "Liverpool",
-
-            "votes": 0
-        }
-
+                "votes": 370
+            }
+    
+        ]
+    }
     ]
 }
+    
+
