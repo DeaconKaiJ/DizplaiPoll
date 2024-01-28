@@ -19,11 +19,7 @@ app.get('/', (req, res) =>{
 
 
 app.get('/data', (req, res) =>{
-    res.json(pollingData)
-    for(option in pollingData.polls){
-        console.log(pollingData.polls[option].pollId)
-    }
-    
+    res.json(pollingData) 
 })
 
 app.get('/results:id', (req,res)=>{
@@ -40,7 +36,7 @@ app.get('/results:id', (req,res)=>{
         }
     }
     if(optionArray.length==0){
-        res.status("404").render("results")
+        res.status(404).render("results")
     }
     else{
         var rounded = percentRound(resultsArray)
@@ -67,10 +63,10 @@ app.get('/results:id', (req,res)=>{
 app.get('/:id', (req, res)=>{
     const requestedPoll = req.params.id -1
     if (pollingData.polls[requestedPoll] == undefined){
-        res.status("404").render("index")
+        res.status(404).render("index")
     }
     else{   
-        res.status("200").render("index", {question: pollingData.polls[requestedPoll].question,
+        res.status(200).render("index", {question: pollingData.polls[requestedPoll].question,
              firstOption: pollingData.polls[requestedPoll].options[0].optionText,
               secondOption: pollingData.polls[requestedPoll].options[1].optionText,
                thirdOption: pollingData.polls[requestedPoll].options[2].optionText})
@@ -81,7 +77,7 @@ app.post('/:id', (req, res, next)=>{
     const pollID = req.params.id
 
     if(req.body.chosen ==""){
-        res.status("404").redirect("/"+req.params.id)
+        res.status(404).redirect("/"+req.params.id)
     }
     else{
         for(poll in pollingData.polls){
@@ -89,13 +85,13 @@ app.post('/:id', (req, res, next)=>{
                 for(option in pollingData.polls[poll].options){
                     if (pollingData.polls[poll].options[option].optionText == req.body.chosen){
                         pollingData.polls[poll].options[option].votes +=1
-                        res.status("200").redirect('/results' +pollID)
+                        res.status(200).redirect('/results' +pollID)
                         return next()
                     }
                 }
             }
         }
-        res.status("404").redirect('/results' +pollID)
+        res.status(404).redirect('/results' +pollID)
     }    
 })
 
